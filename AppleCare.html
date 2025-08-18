@@ -10,11 +10,6 @@
       color: #1d1d1f;
     }
 
-    h1 {
-      text-align: center;
-      color: #b30000; /* Rojo AppleCare+ */
-    }
-
     table {
       width: 100%;
       border-collapse: collapse;
@@ -24,33 +19,51 @@
     }
 
     th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
+      padding: 14px;
       text-align: center;
     }
 
+    /* Primera fila con AppleCare+ */
+    .title {
+      background-color: #b30000; /* Rojo AppleCare+ */
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Encabezados */
     th {
       background-color: #b30000; /* Rojo AppleCare+ */
       color: white;
       font-weight: bold;
+      font-size: 20px;
     }
 
+    /* Filas de datos */
     td {
+      border: 1px solid #ccc;
       background-color: #f9f9f9;
+      font-size: 18px;
     }
 
+    /* Años de cobertura en gris claro */
     .years {
       font-weight: bold;
       background-color: #f0f0f0;
     }
+
+    /* Precios en grande y negrita */
+    .price {
+      font-weight: bold;
+      font-size: 20px;
+      color: #b30000;
+    }
   </style>
 </head>
 <body>
-  <h1>AppleCare+ Precios Oficiales</h1>
-
   <table>
     <tr>
-      <th colspan="3">AppleCare+</th>
+      <td colspan="3" class="title">AppleCare+</td>
     </tr>
     <tr>
       <th>Años de Cobertura</th>
@@ -62,65 +75,65 @@
     <tr>
       <td class="years" rowspan="6">3 años</td>
       <td>Mac mini</td>
-      <td>$104.990</td>
+      <td class="price">$104.990</td>
     </tr>
     <tr>
       <td>iMac</td>
-      <td>$178.990</td>
+      <td class="price">$178.990</td>
     </tr>
     <tr>
       <td>MacBook Air 13</td>
-      <td>$210.990</td>
+      <td class="price">$210.990</td>
     </tr>
     <tr>
       <td>MacBook Air 15</td>
-      <td>$242.990</td>
+      <td class="price">$242.990</td>
     </tr>
     <tr>
       <td>MacBook Pro 14</td>
-      <td>$295.990</td>
+      <td class="price">$295.990</td>
     </tr>
     <tr>
       <td>MacBook Pro 16</td>
-      <td>$423.990</td>
+      <td class="price">$423.990</td>
     </tr>
 
     <!-- iPad -->
     <tr>
       <td class="years" rowspan="5">2 años</td>
       <td>iPad, iPad mini</td>
-      <td>$72.990</td>
+      <td class="price">$72.990</td>
     </tr>
     <tr>
       <td>iPad Air 11</td>
-      <td>$89.990</td>
+      <td class="price">$89.990</td>
     </tr>
     <tr>
       <td>iPad Air 13</td>
-      <td>$114.990</td>
+      <td class="price">$114.990</td>
     </tr>
     <tr>
       <td>iPad Pro 11</td>
-      <td>$169.990</td>
+      <td class="price">$169.990</td>
     </tr>
     <tr>
       <td>iPad Pro 13</td>
-      <td>$194.990</td>
+      <td class="price">$194.990</td>
     </tr>
 
     <!-- Apple Watch -->
     <tr>
       <td class="years" rowspan="3">2 años</td>
       <td>Apple Watch SE</td>
-      <td>$51.990</td>
+      <td class="price">$51.990</td>
     </tr>
     <tr>
       <td>Apple Watch Series 10</td>
-      <td>$83.990</td>
+      <td class="price">$83.990</td>
     </tr>
     <tr>
       <td>Apple Watch Ultra 2</td>
-      <td>$104.990</td>
+      <td class="price">$104.990</td>
     </tr>
   </table>
 </body>
