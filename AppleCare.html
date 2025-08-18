@@ -3,138 +3,179 @@
   <meta charset="UTF-8">
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      background: #ffffff;
-      margin: 0;
+      font-family: helvetica, sans-serif;
+      background: linear-gradient(to top right, #000000, #000000);
+      color: white;
+      margin: auto 0;
+      padding: 0;
+      height: 100vh;
+      width:100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      box-sizing: border-box;
+    }
+    .content {
+      width: 90%;
+      max-width: 1000px;
       padding: 20px;
-      color: #1d1d1f;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px auto;
-      max-width: 900px;
-      font-size: 18px;
-    }
-
-    th, td {
-      padding: 14px;
+      margin-top: 40px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
     }
-
-    /* Primera fila con AppleCare+ */
-    .title {
+    h3, .modelo {
+      color: #ffffff;
+      margin: 10px 0;
+      letter-spacing: 0.1em;
+    }
+    h3 {
+      font-size: 30px;
+      font-weight: 100;
+    }
+    .modelo {
+      font-size: 45px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    .contenedor {
+      display:flex;
+      max-height: 220px;
+      width: 100%;
+      padding: 20px;
+      justify-content:space-between;
+      align-items:center;
       background-color: #b30000; /* Rojo AppleCare+ */
-      color: white;
-      font-size: 24px;
-      font-weight: bold;
+      border-radius:40px;
+      margin-bottom: 40px;
     }
-
-    /* Encabezados */
-    th {
-      background-color: #b30000; /* Rojo AppleCare+ */
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    /* Filas de datos */
-    td {
-      border: 1px solid #ccc;
-      background-color: #f9f9f9;
-      font-size: 18px;
-    }
-
-    /* Años de cobertura en gris claro */
     .years {
-      font-weight: bold;
-      background-color: #f0f0f0;
+      padding:10px;
+      border: solid 4px white;
+      border-radius: 20px;
+      margin: 0 10px;
     }
-
-    /* Precios en grande y negrita */
-    .price {
-      font-weight: bold;
-      font-size: 20px;
-      color: #b30000;
+    .years .elemento1 {
+      font-size: 80px;
+      color: white;
+      margin: 5px 0;
+    }
+    .years .elemento2 {
+      font-size: 40px;
+      color: white;
+      border-top:solid 4px white;
+      padding-top:15px;
+      margin: 5px 0;
+    }
+    #grado-a h4 {
+      font-size: 34px;  /* agrandado para destacar precios */
+      font-weight: 600;
+      color: white;
+      margin: 8px 0;
+    }
+    .descripcion {
+      font-size: 38px;
+      color: #d4d4d3;
+      font-weight: 300;
+      margin-top:30px;
+      text-align: left;
+      width: 100%;
+    }
+    .descripcion li {
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <table>
-    <tr>
-      <td colspan="3" class="title">AppleCare+</td>
-    </tr>
-    <tr>
-      <th>Años de Cobertura</th>
-      <th>Modelo</th>
-      <th>Precio</th>
-    </tr>
+  <div class="content">
+    <h3>APPLECARE+</h3>
+    <h3 class="modelo">Cobertura Estándar – 2 años</h3>
 
-    <!-- Mac -->
-    <tr>
-      <td class="years" rowspan="6">3 años</td>
-      <td>Mac mini</td>
-      <td class="price">$104.990</td>
-    </tr>
-    <tr>
-      <td>iMac</td>
-      <td class="price">$178.990</td>
-    </tr>
-    <tr>
-      <td>MacBook Air 13</td>
-      <td class="price">$210.990</td>
-    </tr>
-    <tr>
-      <td>MacBook Air 15</td>
-      <td class="price">$242.990</td>
-    </tr>
-    <tr>
-      <td>MacBook Pro 14</td>
-      <td class="price">$295.990</td>
-    </tr>
-    <tr>
-      <td>MacBook Pro 16</td>
-      <td class="price">$423.990</td>
-    </tr>
+    <!-- iPhone -->
+    <div class="contenedor">
+      <div class="years">
+        <div class="elemento1">2</div>
+        <div class="elemento2">Años</div>
+      </div>
+      <div id="grado-a">
+        <h4>Iphone 16e: $139.990</h4>
+        <h4>Iphone 16, 15: $157.990</h4>
+        <h4>Iphone 16 Plus, 15 Plus: $189.990</h4>
+        <h4>Iphone 16 Pro, 16 Pro Max: $210.990</h4>
+      </div>
+    </div>
 
     <!-- iPad -->
-    <tr>
-      <td class="years" rowspan="5">2 años</td>
-      <td>iPad, iPad mini</td>
-      <td class="price">$72.990</td>
-    </tr>
-    <tr>
-      <td>iPad Air 11</td>
-      <td class="price">$89.990</td>
-    </tr>
-    <tr>
-      <td>iPad Air 13</td>
-      <td class="price">$114.990</td>
-    </tr>
-    <tr>
-      <td>iPad Pro 11</td>
-      <td class="price">$169.990</td>
-    </tr>
-    <tr>
-      <td>iPad Pro 13</td>
-      <td class="price">$194.990</td>
-    </tr>
+    <div class="contenedor">
+      <div class="years">
+        <div class="elemento1">2</div>
+        <div class="elemento2">Años</div>
+      </div>
+      <div id="grado-a">
+        <h4>iPad, iPad mini: $72.990</h4>
+        <h4>iPad Air 11: $89.990</h4>
+        <h4>iPad Air 13: $114.990</h4>
+        <h4>iPad Pro 11: $169.990</h4>
+        <h4>iPad Pro 13: $194.990</h4>
+      </div>
+    </div>
+
+    <!-- Mac -->
+    <div class="contenedor">
+      <div class="years">
+        <div class="elemento1">3</div>
+        <div class="elemento2">Años</div>
+      </div>
+      <div id="grado-a">
+        <h4>Mac mini: $104.990</h4>
+        <h4>iMac: $178.990</h4>
+        <h4>MacBook Air 13: $210.990</h4>
+        <h4>MacBook Air 15: $242.990</h4>
+        <h4>MacBook Pro 14: $295.990</h4>
+        <h4>MacBook Pro 16: $423.990</h4>
+      </div>
+    </div>
 
     <!-- Apple Watch -->
-    <tr>
-      <td class="years" rowspan="3">2 años</td>
-      <td>Apple Watch SE</td>
-      <td class="price">$51.990</td>
-    </tr>
-    <tr>
-      <td>Apple Watch Series 10</td>
-      <td class="price">$83.990</td>
-    </tr>
-    <tr>
-      <td>Apple Watch Ultra 2</td>
-      <td class="price">$104.990</td>
-    </tr>
-  </table>
+    <div class="contenedor">
+      <div class="years">
+        <div class="elemento1">2</div>
+        <div class="elemento2">Años</div>
+      </div>
+      <div id="grado-a">
+        <h4>Apple Watch SE 2: $51.990</h4>
+        <h4>Apple Watch Series 10: $83.990</h4>
+        <h4>Apple Watch Ultra 2: $104.990</h4>
+      </div>
+    </div>
+
+    <h3 class="modelo">AppleCare+ con Robo y Pérdida – 2 años</h3>
+
+    <!-- iPhone with theft -->
+    <div class="contenedor">
+      <div class="years">
+        <div class="elemento1">2</div>
+        <div class="elemento2">Años</div>
+      </div>
+      <div id="grado-a">
+        <h4>Iphone 16e: $214.990</h4>
+        <h4>Iphone 16, 15: $231.990</h4>
+        <h4>Iphone 16 Plus, 15 Plus: $263.990</h4>
+        <h4>Iphone 16 Pro, 16 Pro Max: $285.990</h4>
+      </div>
+    </div>
+    
+    <!-- Descripción -->
+    <div class="descripcion">
+      <ul>
+        <li>Cobertura de 2 años (a menos que se indique 3 años para Mac).</li>
+        <li>AppleCare+ cubre daños accidentales con tarifas de servicio reducidas.</li>
+        <li>AppleCare+ con Robo y Pérdida incluye hasta dos reclamaciones al año (requiere Find My activo).</li>
+        <li>Precios oficiales Apple Chile: iPhone desde $139.990, iPad desde $72.990, Mac desde $104.990, Apple Watch desde $51.990.</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
