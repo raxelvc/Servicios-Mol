@@ -3,180 +3,79 @@
   <meta charset="UTF-8">
   <style>
     body {
-      font-family: helvetica, sans-serif;
-      background: linear-gradient(to top right, #000000, #000000);
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      background: #ffffff;
+      margin: 0;
+      padding: 20px;
+      color: #1d1d1f;
+    }
+
+    h1 {
+      text-align: center;
+      color: #b30000; /* Rojo AppleCare+ */
+    }
+
+    .container {
+      background: #b30000; /* Rojo AppleCare+ */
       color: white;
-      margin: auto 0;
-      padding: 0;
-      height: 100vh;
-      width:100%;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      box-sizing: border-box;
-    }
-    .content {
-      width: 90%;
-      max-width: 1000px;
+      border-radius: 12px;
       padding: 20px;
-      margin-top: 40px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
-    h3, .modelo {
-      color: #ffffff;
-      margin: 10px 0;
-      letter-spacing: 0.1em;
-    }
-    h3 {
-      font-size: 30px;
-      font-weight: 100;
-    }
-    .modelo {
-      font-size: 45px;
+
+    .title {
+      font-size: 22px;
       font-weight: 600;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      padding-bottom: 5px;
     }
-    .contenedor {
-      display:flex;
-      width: 100%;
-      padding: 20px;
-      justify-content:space-between;
-      align-items:center;
-      background-color: #388054;
-      border-radius:40px;
-      margin-bottom: 40px;
+
+    .item {
+      margin: 12px 0;
+      display: flex;
+      justify-content: space-between;
     }
-    .years {
-      padding:10px;
-      border: solid 4px white;
-      border-radius: 20px;
-      margin: 0 10px;
+
+    .product {
+      font-size: 18px;
     }
-    .years .elemento1 {
-      font-size: 80px;
-      color: #0d4734;
-      margin: 5px 0;
-    }
-    .years .elemento2 {
-      font-size: 40px;
-      color: #0d4734;
-      border-top:solid 4px white;
-      padding-top:15px;
-      margin: 5px 0;
-    }
-    #grado-a {
-      padding: 15px;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .descripcion {
-      font-size: 28px;
-      color: #d4d4d3;
-      font-weight: 300;
-      margin-top:30px;
-      text-align: left;
-      width: 100%;
-    }
-    .descripcion li {
-      margin-bottom: 10px;
+
+    .price {
+      font-size: 22px; /* Más grande para destacar */
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div class="content">
+  <h1>AppleCare+ Precios Oficiales</h1>
 
-    <!-- iPhone AppleCare+ -->
-    <h3>APPLECARE+</h3>
-    <h3 class="modelo">iPhone – 2 años</h3>
-    <div class="contenedor">
-      <div class="years">
-        <div class="elemento1">2</div>
-        <div class="elemento2">Años</div>
-      </div>
-      <div id="grado-a">
-        <h4>iPhone 16e: $139.990</h4>
-        <h4>iPhone 16, 15: $157.990</h4>
-        <h4>iPhone 16 Plus, 15 Plus: $189.990</h4>
-        <h4>iPhone 16 Pro, 16 Pro Max: $210.990</h4>
-      </div>
-    </div>
+  <div class="container">
+    <div class="title">AppleCare+ 3 años (Mac)</div>
+    <div class="item"><span class="product">Mac mini</span><span class="price">$104.990</span></div>
+    <div class="item"><span class="product">iMac</span><span class="price">$178.990</span></div>
+    <div class="item"><span class="product">MacBook Air 13</span><span class="price">$210.990</span></div>
+    <div class="item"><span class="product">MacBook Air 15</span><span class="price">$242.990</span></div>
+    <div class="item"><span class="product">MacBook Pro 14</span><span class="price">$295.990</span></div>
+    <div class="item"><span class="product">MacBook Pro 16</span><span class="price">$423.990</span></div>
+  </div>
 
-    <!-- iPhone AppleCare+ con Robo y Pérdida -->
-    <h3 class="modelo">iPhone – AppleCare+ con Robo y Pérdida (2 años)</h3>
-    <div class="contenedor">
-      <div class="years">
-        <div class="elemento1">2</div>
-        <div class="elemento2">Años</div>
-      </div>
-      <div id="grado-a">
-        <h4>iPhone 16e: $214.990</h4>
-        <h4>iPhone 16, 15: $231.990</h4>
-        <h4>iPhone 16 Plus, 15 Plus: $263.990</h4>
-        <h4>iPhone 16 Pro, 16 Pro Max: $285.990</h4>
-      </div>
-    </div>
+  <div class="container">
+    <div class="title">AppleCare+ 2 años (iPad)</div>
+    <div class="item"><span class="product">iPad, iPad mini</span><span class="price">$72.990</span></div>
+    <div class="item"><span class="product">iPad Air 11</span><span class="price">$89.990</span></div>
+    <div class="item"><span class="product">iPad Air 13</span><span class="price">$114.990</span></div>
+    <div class="item"><span class="product">iPad Pro 11</span><span class="price">$169.990</span></div>
+    <div class="item"><span class="product">iPad Pro 13</span><span class="price">$194.990</span></div>
+  </div>
 
-    <!-- Mac AppleCare+ -->
-    <h3 class="modelo">Mac – 3 años</h3>
-    <div class="contenedor">
-      <div class="years">
-        <div class="elemento1">3</div>
-        <div class="elemento2">Años</div>
-      </div>
-      <div id="grado-a">
-        <h4>Mac mini: $104.990</h4>
-        <h4>iMac: $178.990</h4>
-        <h4>MacBook Air 13: $210.990</h4>
-        <h4>MacBook Air 15: $242.990</h4>
-        <h4>MacBook Pro 14: $295.990</h4>
-        <h4>MacBook Pro 16: $423.990</h4>
-      </div>
-    </div>
-
-    <!-- iPad AppleCare+ -->
-    <h3 class="modelo">iPad – 2 años</h3>
-    <div class="contenedor">
-      <div class="years">
-        <div class="elemento1">2</div>
-        <div class="elemento2">Años</div>
-      </div>
-      <div id="grado-a">
-        <h4>iPad, iPad mini: $72.990</h4>
-        <h4>iPad Air 11: $89.990</h4>
-        <h4>iPad Air 13: $114.990</h4>
-        <h4>iPad Pro 11: $169.990</h4>
-        <h4>iPad Pro 13: $194.990</h4>
-      </div>
-    </div>
-
-    <!-- Apple Watch AppleCare+ -->
-    <h3 class="modelo">Apple Watch – 2 años</h3>
-    <div class="contenedor">
-      <div class="years">
-        <div class="elemento1">2</div>
-        <div class="elemento2">Años</div>
-      </div>
-      <div id="grado-a">
-        <h4>Apple Watch SE: $51.990</h4>
-        <h4>Apple Watch Series 10: $83.990</h4>
-        <h4>Apple Watch Ultra 2: $104.990</h4>
-      </div>
-    </div>
-
-    <!-- Descripción -->
-    <div class="descripcion">
-      <ul>
-        <li>AppleCare+ para iPhone: cobertura de 2 años, con opción de Robo y Pérdida.</li>
-        <li>AppleCare+ para iPad y Apple Watch: cobertura de 2 años.</li>
-        <li>AppleCare+ para Mac: cobertura de 3 años.</li>
-        <li>Incluye hasta dos incidentes de daños accidentales por año con tarifa reducida de servicio.</li>
-        <li>El plan con Robo y Pérdida para iPhone incluye hasta dos incidentes de reemplazo por año (requiere “Buscar mi iPhone” activo).</li>
-      </ul>
-    </div>
+  <div class="container">
+    <div class="title">AppleCare+ 2 años (Apple Watch)</div>
+    <div class="item"><span class="product">Apple Watch SE</span><span class="price">$51.990</span></div>
+    <div class="item"><span class="product">Apple Watch Series 10</span><span class="price">$83.990</span></div>
+    <div class="item"><span class="product">Apple Watch Ultra 2</span><span class="price">$104.990</span></div>
   </div>
 </body>
 </html>
