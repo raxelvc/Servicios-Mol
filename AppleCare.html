@@ -1,27 +1,28 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: helvetica, sans-serif;
-      background-color: #000000;
-      color: white;
+    html, body {
       margin: 0;
       padding: 0;
-      min-height: 100vh;
-      width: 100%;
+      height: 100%;
+      background-color: #000000; /* fondo negro sólido */
+      font-family: helvetica, sans-serif;
+      color: white;
+      box-sizing: border-box;
+    }
+    body {
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      box-sizing: border-box;
+      min-height: 100vh;
+      width: 100%;
     }
     .content {
-      width: 95%;
+      width: 90%;
       max-width: 1000px;
       padding: 20px;
-      margin-top: 20px;
-      box-sizing: border-box;
+      margin-top: 40px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -32,48 +33,94 @@
       margin: 10px 0;
       letter-spacing: 0.1em;
     }
-    h3 { font-size: 30px; font-weight: 100; }
-    .modelo { font-size: 45px; font-weight: 600; margin-bottom: 20px; }
-    .contenedor {
-      display: flex;
-      width: 100%;
-      padding: 20px;
-      background-color: #b30000; /* Rojo AppleCare+ */
-      border-radius: 40px;
+    h3 {
+      font-size: 30px;
+      font-weight: 100;
+    }
+    .modelo {
+      font-size: 45px;
+      font-weight: 600;
       margin-bottom: 30px;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+    }
+    .contenedor {
+      display:flex;
+      width: 100%;
+      min-height: 260px;
+      padding: 20px;
+      justify-content: flex-start;
+      align-items: stretch;
+      background-color: #b30000; /* Rojo AppleCare+ */
+      border-radius:40px;
+      margin-bottom: 40px;
     }
     .years {
-      padding: 10px;
+      padding:10px;
       border: solid 4px white;
       border-radius: 20px;
-      margin-right: 20px;
+      margin: 0 10px;
+      flex-shrink: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+    .years .elemento1 {
+      font-size: 80px;
+      color: white;
+      margin: 5px 0;
+    }
+    .years .elemento2 {
+      font-size: 40px;
+      color: white;
+      border-top:solid 4px white;
+      padding-top:15px;
+      margin: 5px 0;
+    }
+    .detalle {
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+      flex-grow: 1;
+      justify-content: center;
+    }
+    .fila-detalle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .modelo-text {
+      font-size: 34px;
+      font-weight: 600;
+      color: white;
+      text-align: center;
+      flex-grow: 1;
+    }
+    .precio {
+      font-size: 34px;
+      font-weight: 600;
+      color: white;
+      width: 200px;
+      text-align: right;
       flex-shrink: 0;
     }
-    .years .elemento1 { font-size: 80px; color: white; margin: 5px 0; }
-    .years .elemento2 { font-size: 40px; color: white; border-top: solid 4px white; padding-top: 15px; margin: 5px 0; }
-    #grado-a h4 { font-size: 34px; font-weight: 600; color: white; margin: 8px 0; }
     .descripcion {
       font-size: 38px;
       color: #d4d4d3;
       font-weight: 300;
-      margin-top: 30px;
+      margin-top:30px;
       text-align: left;
       width: 100%;
     }
-    .descripcion li { margin-bottom: 10px; }
+    .descripcion li {
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
   <div class="content">
     <h3>APPLECARE+</h3>
-    <h3 class="modelo">PRUEBA/h3>
+    <h3 class="modelo">AppleCare+</h3>
 
     <!-- iPhone -->
     <div class="contenedor">
@@ -81,11 +128,23 @@
         <div class="elemento1">2</div>
         <div class="elemento2">Años</div>
       </div>
-      <div id="grado-a">
-        <h4>Iphone 16e: $139.990</h4>
-        <h4>Iphone 16, 15: $157.990</h4>
-        <h4>Iphone 16 Plus, 15 Plus: $189.990</h4>
-        <h4>Iphone 16 Pro, 16 Pro Max: $210.990</h4>
+      <div class="detalle">
+        <div class="fila-detalle">
+          <div class="modelo-text">Iphone 16e</div>
+          <div class="precio">$139.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">Iphone 16, 15</div>
+          <div class="precio">$157.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">Iphone 16 Plus, 15 Plus</div>
+          <div class="precio">$189.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">Iphone 16 Pro, 16 Pro Max</div>
+          <div class="precio">$210.990</div>
+        </div>
       </div>
     </div>
 
@@ -95,12 +154,27 @@
         <div class="elemento1">2</div>
         <div class="elemento2">Años</div>
       </div>
-      <div id="grado-a">
-        <h4>iPad, iPad mini: $72.990</h4>
-        <h4>iPad Air 11: $89.990</h4>
-        <h4>iPad Air 13: $114.990</h4>
-        <h4>iPad Pro 11: $169.990</h4>
-        <h4>iPad Pro 13: $194.990</h4>
+      <div class="detalle">
+        <div class="fila-detalle">
+          <div class="modelo-text">iPad, iPad mini</div>
+          <div class="precio">$72.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">iPad Air 11</div>
+          <div class="precio">$89.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">iPad Air 13</div>
+          <div class="precio">$114.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">iPad Pro 11</div>
+          <div class="precio">$169.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">iPad Pro 13</div>
+          <div class="precio">$194.990</div>
+        </div>
       </div>
     </div>
 
@@ -110,13 +184,31 @@
         <div class="elemento1">3</div>
         <div class="elemento2">Años</div>
       </div>
-      <div id="grado-a">
-        <h4>Mac mini: $104.990</h4>
-        <h4>iMac: $178.990</h4>
-        <h4>MacBook Air 13: $210.990</h4>
-        <h4>MacBook Air 15: $242.990</h4>
-        <h4>MacBook Pro 14: $295.990</h4>
-        <h4>MacBook Pro 16: $423.990</h4>
+      <div class="detalle">
+        <div class="fila-detalle">
+          <div class="modelo-text">Mac mini</div>
+          <div class="precio">$104.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">iMac</div>
+          <div class="precio">$178.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">MacBook Air 13</div>
+          <div class="precio">$210.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">MacBook Air 15</div>
+          <div class="precio">$242.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">MacBook Pro 14</div>
+          <div class="precio">$295.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">MacBook Pro 16</div>
+          <div class="precio">$423.990</div>
+        </div>
       </div>
     </div>
 
@@ -126,14 +218,23 @@
         <div class="elemento1">2</div>
         <div class="elemento2">Años</div>
       </div>
-      <div id="grado-a">
-        <h4>Apple Watch SE 2: $51.990</h4>
-        <h4>Apple Watch Series 10: $83.990</h4>
-        <h4>Apple Watch Ultra 2: $104.990</h4>
+      <div class="detalle">
+        <div class="fila-detalle">
+          <div class="modelo-text">Apple Watch SE 2</div>
+          <div class="precio">$51.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">Apple Watch Series 10</div>
+          <div class="precio">$83.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">Apple Watch Ultra 2</div>
+          <div class="precio">$104.990</div>
+        </div>
       </div>
     </div>
 
-    <h3 class="modelo">AppleCare+ con Robo y Pérdida – 2 años</h3>
+    <h3 class="modelo">AppleCare+ con Robo y Pérdida</h3>
 
     <!-- iPhone Robo/Pérdida -->
     <div class="contenedor">
@@ -141,11 +242,23 @@
         <div class="elemento1">2</div>
         <div class="elemento2">Años</div>
       </div>
-      <div id="grado-a">
-        <h4>Iphone 16e: $214.990</h4>
-        <h4>Iphone 16, 15: $231.990</h4>
-        <h4>Iphone 16 Plus, 15 Plus: $263.990</h4>
-        <h4>Iphone 16 Pro, 16 Pro Max: $285.990</h4>
+      <div class="detalle">
+        <div class="fila-detalle">
+          <div class="modelo-text">Iphone 16e</div>
+          <div class="precio">$214.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">Iphone 16, 15</div>
+          <div class="precio">$231.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">Iphone 16 Plus, 15 Plus</div>
+          <div class="precio">$263.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">Iphone 16 Pro, 16 Pro Max</div>
+          <div class="precio">$285.990</div>
+        </div>
       </div>
     </div>
 
@@ -154,7 +267,7 @@
       <ul>
         <li>Cobertura de 2 años a 3 años según el dispositivo.</li>
         <li>AppleCare+ cubre daños accidentales con tarifas de servicio reducidas.</li>
-        <li>AppleCare+ con Robo y Pérdida incluye hasta dos incidentes al año (requiere Find My activo).</li>
+        <li>AppleCare+ con Robo y Pérdida cobertura hasta dos incidentes al año (requiere Find My activo).</li>
       </ul>
     </div>
   </div>
