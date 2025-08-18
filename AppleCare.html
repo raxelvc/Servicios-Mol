@@ -10,7 +10,7 @@
       margin: 0;
       padding: 0;
       min-height: 100vh;
-      width:100%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -32,22 +32,21 @@
       margin: 10px 0;
       letter-spacing: 0.1em;
     }
-    h3 { font-size: clamp(20px, 5vw, 30px); font-weight: 100; }
-    .modelo { font-size: clamp(30px, 6vw, 45px); font-weight: 600; margin-bottom: 20px; }
-    
+    h3 { font-size: 30px; font-weight: 100; }
+    .modelo { font-size: 45px; font-weight: 600; margin-bottom: 20px; }
     .contenedor {
-      display:flex;
+      display: flex;
       width: 100%;
       padding: 20px;
-      background-color: #b30000;
-      border-radius:40px;
+      background-color: #b30000; /* Rojo AppleCare+ */
+      border-radius: 40px;
       margin-bottom: 30px;
+      justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: flex-start;
     }
     .years {
-      padding:10px;
+      padding: 10px;
       border: solid 4px white;
       border-radius: 20px;
       margin-right: 20px;
@@ -57,50 +56,18 @@
       align-items: center;
       flex-shrink: 0;
     }
-    .years .elemento1 { font-size: clamp(50px, 10vw, 80px); color: white; margin: 5px 0; }
-    .years .elemento2 { font-size: clamp(25px, 6vw, 40px); color: white; border-top:solid 4px white; padding-top:15px; margin: 5px 0; }
-
-    .detalle { display: flex; flex-direction: column; flex-grow: 1; justify-content: center; }
-
-    .fila-detalle {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-      flex-wrap: wrap;
-    }
-    .modelo-text {
-      font-size: clamp(18px, 4vw, 28px);
-      font-weight: 600;
-      color: white;
-      text-align: left;
-      flex-grow: 1;
-      margin-right: 10px;
-    }
-    .precio {
-      font-size: clamp(18px, 4vw, 28px);
-      font-weight: 600;
-      color: white;
-      text-align: right;
-      flex-shrink: 0;
-    }
-
+    .years .elemento1 { font-size: 80px; color: white; margin: 5px 0; }
+    .years .elemento2 { font-size: 40px; color: white; border-top: solid 4px white; padding-top: 15px; margin: 5px 0; }
+    #grado-a h4 { font-size: 34px; font-weight: 600; color: white; margin: 8px 0; }
     .descripcion {
-      font-size: clamp(16px, 3vw, 24px);
+      font-size: 38px;
       color: #d4d4d3;
       font-weight: 300;
-      margin-top:30px;
+      margin-top: 30px;
       text-align: left;
       width: 100%;
     }
     .descripcion li { margin-bottom: 10px; }
-
-    /* Ajustes responsivos para móviles */
-    @media (max-width: 600px) {
-      .contenedor { flex-direction: column; align-items: stretch; }
-      .fila-detalle { flex-direction: column; align-items: flex-start; }
-      .precio { text-align: left; margin-top: 5px; }
-    }
   </style>
 </head>
 <body>
@@ -114,11 +81,11 @@
         <div class="elemento1">2</div>
         <div class="elemento2">Años</div>
       </div>
-      <div class="detalle">
-        <div class="fila-detalle"><div class="modelo-text">Iphone 16e</div><div class="precio">$139.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">Iphone 16, 15</div><div class="precio">$157.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">Iphone 16 Plus, 15 Plus</div><div class="precio">$189.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">Iphone 16 Pro, 16 Pro Max</div><div class="precio">$210.990</div></div>
+      <div id="grado-a">
+        <h4>Iphone 16e: $139.990</h4>
+        <h4>Iphone 16, 15: $157.990</h4>
+        <h4>Iphone 16 Plus, 15 Plus: $189.990</h4>
+        <h4>Iphone 16 Pro, 16 Pro Max: $210.990</h4>
       </div>
     </div>
 
@@ -128,12 +95,12 @@
         <div class="elemento1">2</div>
         <div class="elemento2">Años</div>
       </div>
-      <div class="detalle">
-        <div class="fila-detalle"><div class="modelo-text">iPad, iPad mini</div><div class="precio">$72.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">iPad Air 11</div><div class="precio">$89.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">iPad Air 13</div><div class="precio">$114.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">iPad Pro 11</div><div class="precio">$169.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">iPad Pro 13</div><div class="precio">$194.990</div></div>
+      <div id="grado-a">
+        <h4>iPad, iPad mini: $72.990</h4>
+        <h4>iPad Air 11: $89.990</h4>
+        <h4>iPad Air 13: $114.990</h4>
+        <h4>iPad Pro 11: $169.990</h4>
+        <h4>iPad Pro 13: $194.990</h4>
       </div>
     </div>
 
@@ -143,13 +110,13 @@
         <div class="elemento1">3</div>
         <div class="elemento2">Años</div>
       </div>
-      <div class="detalle">
-        <div class="fila-detalle"><div class="modelo-text">Mac mini</div><div class="precio">$104.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">iMac</div><div class="precio">$178.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">MacBook Air 13</div><div class="precio">$210.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">MacBook Air 15</div><div class="precio">$242.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">MacBook Pro 14</div><div class="precio">$295.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">MacBook Pro 16</div><div class="precio">$423.990</div></div>
+      <div id="grado-a">
+        <h4>Mac mini: $104.990</h4>
+        <h4>iMac: $178.990</h4>
+        <h4>MacBook Air 13: $210.990</h4>
+        <h4>MacBook Air 15: $242.990</h4>
+        <h4>MacBook Pro 14: $295.990</h4>
+        <h4>MacBook Pro 16: $423.990</h4>
       </div>
     </div>
 
@@ -159,10 +126,10 @@
         <div class="elemento1">2</div>
         <div class="elemento2">Años</div>
       </div>
-      <div class="detalle">
-        <div class="fila-detalle"><div class="modelo-text">Apple Watch SE 2</div><div class="precio">$51.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">Apple Watch Series 10</div><div class="precio">$83.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">Apple Watch Ultra 2</div><div class="precio">$104.990</div></div>
+      <div id="grado-a">
+        <h4>Apple Watch SE 2: $51.990</h4>
+        <h4>Apple Watch Series 10: $83.990</h4>
+        <h4>Apple Watch Ultra 2: $104.990</h4>
       </div>
     </div>
 
@@ -174,11 +141,11 @@
         <div class="elemento1">2</div>
         <div class="elemento2">Años</div>
       </div>
-      <div class="detalle">
-        <div class="fila-detalle"><div class="modelo-text">Iphone 16e</div><div class="precio">$214.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">Iphone 16, 15</div><div class="precio">$231.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">Iphone 16 Plus, 15 Plus</div><div class="precio">$263.990</div></div>
-        <div class="fila-detalle"><div class="modelo-text">Iphone 16 Pro, 16 Pro Max</div><div class="precio">$285.990</div></div>
+      <div id="grado-a">
+        <h4>Iphone 16e: $214.990</h4>
+        <h4>Iphone 16, 15: $231.990</h4>
+        <h4>Iphone 16 Plus, 15 Plus: $263.990</h4>
+        <h4>Iphone 16 Pro, 16 Pro Max: $285.990</h4>
       </div>
     </div>
 
