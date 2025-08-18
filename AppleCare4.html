@@ -1,0 +1,157 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #000000; 
+      font-family: helvetica, sans-serif;
+      color: white;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      width: 100%;
+    }
+    .content {
+      width: 90%;
+      max-width: 1000px;
+      padding: 20px;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    h3, .modelo {
+      color: #ffffff;
+      margin: 10px 0;
+      letter-spacing: 0.1em;
+    }
+    h3 {
+      font-size: 30px;
+      font-weight: 100;
+    }
+    .modelo {
+      font-size: 45px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    .contenedor {
+      display:flex;
+      width: 100%;
+      min-height: 260px;
+      padding: 20px;
+      justify-content: flex-start;
+      align-items: stretch;
+      background-color: #b30000; 
+      border-radius:40px;
+      margin-bottom: 40px;
+    }
+    .years {
+      padding:10px;
+      border: solid 4px white;
+      border-radius: 20px;
+      margin: 0 10px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .years .elemento1 {
+      font-size: 80px;
+      color: white;
+      margin: 5px 0;
+    }
+    .years .elemento2 {
+      font-size: 40px;
+      color: white;
+      border-top:solid 4px white;
+      padding-top:15px;
+      margin: 5px 0;
+    }
+    .detalle {
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+      flex-grow: 1;
+      justify-content: center;
+    }
+    .fila-detalle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .modelo-text {
+      font-size: 34px;
+      font-weight: 600;
+      color: white;
+      text-align: center;
+      flex-grow: 1;
+    }
+    .precio {
+      font-size: 34px;
+      font-weight: 600;
+      color: white;
+      width: 200px;
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .descripcion {
+      font-size: 38px;
+      color: #d4d4d3;
+      font-weight: 300;
+      margin-top:30px;
+      text-align: left;
+      width: 100%;
+    }
+    .descripcion li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h3>APPLECARE+</h3>
+    <h3 class="modelo">Cobertura AppleCare+</h3>
+
+    <!-- Apple Watch -->
+    <div class="contenedor">
+      <div class="years">
+        <div class="elemento1">2</div>
+        <div class="elemento2">Años</div>
+      </div>
+      <div class="detalle">
+        <div class="fila-detalle">
+          <div class="modelo-text">Apple Watch SE 2</div>
+          <div class="precio">$51.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">Apple Watch Series 10</div>
+          <div class="precio">$83.990</div>
+        </div>
+        <div class="fila-detalle">
+          <div class="modelo-text">Apple Watch Ultra 2</div>
+          <div class="precio">$104.990</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Descripción -->
+    <div class="descripcion">
+      <ul>
+        <li>Cobertura de 2 años a 3 años según el dispositivo.</li>
+        <li>AppleCare+ cubre daños accidentales con tarifas de servicio reducidas.</li>
+        <li>AppleCare+ con Robo y Pérdida cobertura hasta dos incidentes al año (requiere Find My activo).</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
