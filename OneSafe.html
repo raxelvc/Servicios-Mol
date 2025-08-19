@@ -11,9 +11,6 @@
       font-family: helvetica, sans-serif;
       color: white;
       box-sizing: border-box;
-    }
-
-    body {
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -30,70 +27,25 @@
       text-align: center;
     }
 
-    h3, .modelo, h4, .tramos, .codigo, .tituloCuotas, .elemento1, .elemento2, .col, .col2, h2 {
-      color: white;
-      margin: 0;
-      padding: 0;
+    h3, .modelo {
+      color: #ffffff;
+      margin: 10px 0;
+      letter-spacing: 0.1em;
     }
 
     h3 {
       font-size: 30px;
       font-weight: 100;
       margin-bottom: 30px;
-      letter-spacing: 0.1em;
     }
 
     .modelo {
       font-size: 45px;
       font-weight: 600;
       margin-bottom: 30px;
-      letter-spacing: 0.1em;
     }
 
-    .years{
-      padding:10px;
-      border: solid 4px white;
-      border-radius: 20px;
-      margin-right:10px;
-      margin-left: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .elemento1{
-      font-size: 80px;
-    }
-
-    .elemento2{
-      font-size: 40px;
-      border-top:solid 4px white;
-      padding-top: 15px;
-    }
-
-    #grado-a{
-      padding: 15px;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    .tramos{
-      font-size: 30px;
-      font-weight: 400;
-    }
-
-    .codigo{
-      font-size: 30px;
-      font-weight: 200;
-    }
-
-    h2 {
-      font-size: 100px;
-      margin: 10px 0;
-    }
-
-    .contenedor{
+    .contenedor {
       display:flex;
       max-height: 220px;
       width: 100%;
@@ -105,10 +57,61 @@
       margin-bottom: 40px;
     }
 
-    .contenedorCuotas{
+    .years {
+      padding:10px;
+      border: solid 4px white;
+      border-radius: 20px;
+      margin: 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .elemento1 {
+      margin: 5px 0;
+      font-size: 80px;
+      color: white;
+    }
+
+    .elemento2 {
+      margin: 5px 0;
+      padding-top: 15px;
+      color: white;
+      border-top: solid 4px white;
+      font-size: 40px;
+    }
+
+    #grado-a {
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .tramos, .codigo {
+      font-size: 30px;
+      color: white;
+      margin: 5px 0;
+      font-weight: 600;
+    }
+
+    h2 {
+      margin: 10px 0;
+      font-size: 100px;
+      color: white;
+    }
+
+    .contenedorCuotas {
       display: flex;
       flex-direction: column;
       padding: 10px;
+    }
+
+    .tituloCuotas {
+      font-size: 30px;
+      color: white;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
 
     .fila {
@@ -122,39 +125,37 @@
       border-right: solid 3px white;
       padding-right: 10px;
       font-weight: 600;
+      color: white;
     }
 
     .col2 {
       font-size: 30px;
       font-weight: 600;
-    }
-
-    .descripcion{
-      font-size: 38px;
-      font-weight: 300;
-      margin-top:30px;
-      width: 100%;
-      text-align: left;
-    }
-
-    .descripcion ul {
-      padding-left: 20px;
-    }
-
-    .descripcion li {
-      margin-bottom: 10px;
       color: white;
     }
 
-    img{
-      width:40%;
-      margin-bottom:50px;
+    .descripcion {
+      font-size: 38px;
+      color: white;
+      font-weight: 300;
+      margin-top: 30px;
+      text-align: left;
+      width: 100%;
     }
+
+    /* Imagen */
+    .imagen-base64 {
+      width: 40%;
+      margin-bottom: 50px;
+    }
+
   </style>
 </head>
 <body>
   <div class="content">
-    <img src="" alt="">
+
+    <!-- Imagen en Base64: reemplaza la cadena vacía por tu base64 -->
+    <img class="" src="" alt="">
 
     <h3>PROGRAMA DE ROBO ONESAFE</h3>
     <h3 class="modelo">iPhone</h3>
@@ -170,7 +171,7 @@
         <h4 class="codigo">SKU: PROTIPH/0-800</h4>
       </div>
       <div class="contenedorCuotas">
-        <h2 class="tituloCuotas">EN CUOTAS</h2>
+        <h4 class="tituloCuotas">EN CUOTAS</h4>
         <div class="fila">
           <div class="col">12</div>
           <div class="col2">$9.583</div>
@@ -197,7 +198,7 @@
         <h4 class="codigo">SKU: PROTIPH/801-2000</h4>
       </div>
       <div class="contenedorCuotas">
-        <h2 class="tituloCuotas">EN CUOTAS</h2>
+        <h4 class="tituloCuotas">EN CUOTAS</h4>
         <div class="fila">
           <div class="col">12</div>
           <div class="col2">$12.666</div>
