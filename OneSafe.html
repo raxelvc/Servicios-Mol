@@ -102,10 +102,12 @@
       margin: 0 20px;
       text-align: center;
 
-      /* 👇 evita que se deforme */
-      flex-shrink: 0;
-      flex-grow: 0;
-      width: 220px;  /* ancho fijo estable */
+      /* 🔑 reglas que arreglan la deformación */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 0 0 auto;  /* no crecer, no encoger */
     }
   </style>
 </head>
@@ -122,8 +124,8 @@
       </div>
       <div id="grado-a">
         <h2>$114.990</h2>
-        <p class="precio-detalle">Entre $0 a $800.000</p>
-        <h4 class="codigo">SKU: PROTIPH/000-800</h4>
+        <h4 class="precio-detalle">Desde $0 a $800.000</p>
+        <p class="codigo">SKU: PROTIPH/0-800</h4>
       </div>
     </div>
 
