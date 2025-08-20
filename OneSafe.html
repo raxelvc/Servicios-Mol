@@ -6,7 +6,8 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      background-color: #000000;
+      width: 100%;
+      background-color: #000000; 
       font-family: helvetica, sans-serif;
       color: white;
       box-sizing: border-box;
@@ -16,8 +17,6 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      min-height: 100vh;
-      width: 100%;
     }
 
     .content {
@@ -31,141 +30,126 @@
       text-align: center;
     }
 
+    h1 {
+      color: #FFFFFF;
+      margin: 5px 0;
+      font-size: 34px;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    h3 {
+      color: #FFFFFF;
+      margin: 10px 0;
+      font-size: 30px;
+      margin-bottom: 30px;
+      letter-spacing: 0.1em;
+      font-weight: 100;
+    }
+
+    .modelo {
+      color: #FFFFFF;
+      margin: 10px 0;
+      font-size: 45px;
+      margin-bottom: 30px;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+    }
+
+    h4 {
+      margin: 5px 0;
+      font-size: 50px;
+      color: #FFFFFF;
+    }
+
+    .elemento1 {
+      margin: 5px 0;
+      font-size: 100px;
+      color: #FFFFFF;
+    }
+
+    .elemento2 {
+      color: #FFFFFF;
+      border-top: solid 4px white;
+      padding-top: 15px;
+    }
+
+    #grado-a {
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    h2 {
+      margin: 10px 0;
+      font-size: 132px;
+      color: white;
+    }
+
+    .descripcion {
+      font-size: 38px;
+      color: #FFFFFF;
+      font-weight: 300;
+      margin-top: 30px;
+    }
+
     img {
       width: 40%;
       margin-bottom: 50px;
     }
 
-    h3, .modelo {
-      color: #ffffff;
-      margin: 10px 0;
-      letter-spacing: 0.1em;
-    }
-
-    h3 {
-      font-size: 30px;
-      font-weight: 100;
-    }
-
-    .modelo {
-      font-size: 45px;
-      font-weight: 600;
-      margin-bottom: 30px;
-    }
-
     .contenedor {
       display: flex;
-      width: 100%;
       padding: 20px;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       background-color: #388054;
       border-radius: 40px;
       margin-bottom: 40px;
-    }
-
-    .years {
-      padding: 10px;
-      border: solid 4px white;
-      border-radius: 20px;
-      margin-right: 20px;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .elemento1 {
-      margin: 5px 0;
-      font-size: 8vw; /* tamaño relativo para adaptarse a pantalla */
-      max-font-size: 80px;
-      color: white;
-    }
-
-    .elemento2 {
-      margin: 5px 0;
-      padding-top: 15px;
-      color: white;
-      border-top: solid 4px white;
-      font-size: 4vw; /* tamaño relativo */
-      max-font-size: 40px;
-    }
-
-    .detalle {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      flex-grow: 1;
-    }
-
-    .precio {
-      font-size: 12vw; /* tamaño relativo para adaptarse a pantalla */
-      max-font-size: 100px;
-      font-weight: 600;
-      color: white;
-      margin: 0;
-    }
-
-    .codigo {
-      font-size: 3.5vw;
-      max-font-size: 30px;
-      font-weight: 200;
-      color: white;
-      margin-top: 5px;
-    }
-
-    .descripcion {
-      font-size: 4vw;
-      max-font-size: 38px;
-      color: #d4d4d3;
-      font-weight: 300;
-      margin-top: 30px;
-      text-align: left;
       width: 100%;
     }
 
-    .descripcion ul {
-      padding-left: 20px;
+    .years {
+      padding: 20px;
+      border: solid 4px white;
+      border-radius: 20px;
+      margin-right: 10px;
+      margin-left: 20px;
     }
-
-    .descripcion li {
-      margin-bottom: 10px;
-    }
-
   </style>
 </head>
 <body>
   <div class="content">
-    <!-- Inserta tu imagen base64 aquí -->
-    <img src="data:image/png;base64,..." alt="">
+    <img src="" alt=""> <!-- Espacio para insertar la imagen -->
 
-    <h3>PROGRAMA DE ROBO ONESAFE</h3>
+    <h3>PROGRAMA DE COBERTURA ONCARE</h3>
     <h3 class="modelo">iPhone</h3>
 
     <div class="contenedor">
       <div class="years">
-        <div class="elemento1">2</div>
-        <div class="elemento2">Años</div>
+        <h4 class="elemento1">2</h4>
+        <h4 class="elemento2">Años</h4>
       </div>
-      <div class="detalle">
-        <p class="precio">$114.990</p>
-        <p class="codigo">SKU: PROTIPH/0-800</p>
+      <div id="grado-a">
+        <h2>$114.990</h2>
+        <h4 class="codigo">SKU: PROTIPH/0-800</h4>
       </div>
     </div>
+
 
     <div class="contenedor">
       <div class="years">
-        <div class="elemento1">2</div>
-        <div class="elemento2">Años</div>
+        <h4 class="elemento1">2</h4>
+        <h4 class="elemento2">Años</h4>
       </div>
-      <div class="detalle">
-        <p class="precio">$151.990</p>
-        <p class="codigo">SKU: PROTIPH/801-2000</p>
+      <div id="grado-a">
+        <h2>$151.990</h2>
+        <h4 class="codigo">Entre $800.001 a $2.000.000</h4>
+        <h4 class="codigo">SKU: PROTIPH/801-2000</h4>
       </div>
-    </div>
-
+    </div>    
+    
     <div class="descripcion">
       <ul>
         <li>Cobertura completa sin deducible</li>
