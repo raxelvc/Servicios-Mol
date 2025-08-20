@@ -30,14 +30,6 @@
       text-align: center;
     }
 
-    h1 {
-      color: #FFFFFF;
-      margin: 5px 0;
-      font-size: 34px;
-      margin-bottom: 6px;
-      font-weight: 500;
-    }
-
     h3 {
       color: #FFFFFF;
       margin: 10px 0;
@@ -48,55 +40,51 @@
     }
 
     .modelo {
-      color: #FFFFFF;
-      margin: 10px 0;
       font-size: 45px;
       margin-bottom: 30px;
-      letter-spacing: 0.1em;
       font-weight: 600;
-    }
-
-    h4 {
-      margin: 5px 0;
-      font-size: 50px;
-      color: #FFFFFF;
+      letter-spacing: 0.1em;
     }
 
     .elemento1 {
-      margin: 5px 0;
       font-size: 100px;
-      color: #FFFFFF;
     }
 
     .elemento2 {
-      color: #FFFFFF;
       border-top: solid 4px white;
       padding-top: 15px;
+      font-size: 40px;
     }
 
     #grado-a {
+      flex: 1;
       padding: 15px;
       text-align: center;
       margin-bottom: 10px;
-      width: 100%;
     }
 
     h2 {
       margin: 10px 0;
-      font-size: 132px;
+      font-size: 140px;
       color: white;
+    }
+
+    .precio-detalle {
+      font-size: 38px;
+      margin-top: -10px;
+      font-weight: 300;
+    }
+
+    .codigo {
+      font-size: 42px;
+      font-weight: 400;
+      margin-top: 15px;
     }
 
     .descripcion {
       font-size: 38px;
-      color: #FFFFFF;
       font-weight: 300;
       margin-top: 30px;
-    }
-
-    img {
-      width: 40%;
-      margin-bottom: 50px;
     }
 
     .contenedor {
@@ -111,21 +99,22 @@
     }
 
     .years {
+      flex: 1;
       padding: 20px;
       border: solid 4px white;
       border-radius: 20px;
       margin-right: 10px;
       margin-left: 20px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <div class="content">
-    <img src="" alt=""> <!-- Espacio para insertar la imagen -->
-
     <h3>PROGRAMA DE ROBO ONESAFE</h3>
     <h3 class="modelo">iPhone</h3>
 
+    <!-- Primer contenedor -->
     <div class="contenedor">
       <div class="years">
         <h4 class="elemento1">2</h4>
@@ -133,11 +122,12 @@
       </div>
       <div id="grado-a">
         <h2>$114.990</h2>
+        <p class="precio-detalle">Desde $0 a $800.000</p>
         <h4 class="codigo">SKU: PROTIPH/0-800</h4>
       </div>
     </div>
 
-
+    <!-- Segundo contenedor -->
     <div class="contenedor">
       <div class="years">
         <h4 class="elemento1">2</h4>
@@ -145,10 +135,8 @@
       </div>
       <div id="grado-a">
         <h2>$151.990</h2>
-        <h4 class="codigo">Entre $800.001 a $2.000.000</h4>
-        <ul> 
-        <p>SKU: PROTIPH/801-2000</p>
-        </ul>
+        <p class="precio-detalle">Entre $800.001 a $2.000.000</p>
+        <h4 class="codigo">SKU: PROTIPH/801-2000</h4>
       </div>
     </div>    
     
