@@ -106,7 +106,7 @@
       margin-bottom: 50px;
     }
 
-    /* Estilo original de tu ejemplo */
+    /* === Estilo original de tu ejemplo === */
     .contenedor {
       display: flex;
       padding: 20px;
@@ -126,132 +126,156 @@
       margin-left: 20px;
     }
 
-    /* Misma filosofía del contenedor, solo cambiando el color */
+    /* === Misma filosofía que .contenedor, solo cambia el color === */
     .card {
       display: flex;
       padding: 20px;
       justify-content: center;
       align-items: center;
-      background-color: #a4c47c; /* tu color */
+      background-color: #a4c47c; /* color solicitado */
       border-radius: 40px;
       margin-bottom: 40px;
       width: 100%;
+    }
+
+    /* Columnita de texto a la derecha (sin “responsivo”, tal como el ejemplo) */
+    .detalle-precio {
+      text-align: left;
+      padding: 0 20px;
+      width: 100%;
+    }
+
+    .fila {
+      font-size: 38px;   /* coherente con .precio-detalle */
+      font-weight: 300;
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    .fila strong {
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
   <div class="content">
-    <div class="titulo">PROGRAMA DE TRADE-IN</div>
+    <h3>PROGRAMA DE TRADE-IN</h3>
 
     <!-- iPhone 12 mini -->
-    <div class="modelo">iPhone 12 mini</div>
+    <h3 class="modelo">iPhone 12 mini</h3>
+
     <div class="card">
       <div class="years">
-        <div class="elemento1">A</div>
-        <div class="elemento2">Grado</div>
+        <h4 class="elemento1">A</h4>
+        <h4 class="elemento2">Grado</h4>
       </div>
-      <div>
-        <div><span>64 GB</span> &nbsp; <strong>$200.000</strong></div>
-        <div><span>128 GB</span> &nbsp; <strong>$225.000</strong></div>
-        <div><span>256 GB</span> &nbsp; <strong>$275.000</strong></div>
+      <div class="detalle-precio" id="grado-a">
+        <div class="fila">64 GB — <strong>$200.000</strong></div>
+        <div class="fila">128 GB — <strong>$225.000</strong></div>
+        <div class="fila">256 GB — <strong>$275.000</strong></div>
       </div>
     </div>
 
     <div class="card">
       <div class="years">
-        <div class="elemento1">B</div>
-        <div class="elemento2">Grado</div>
+        <h4 class="elemento1">B</h4>
+        <h4 class="elemento2">Grado</h4>
       </div>
-      <div>
-        <div><span>64 GB</span> &nbsp; <strong>$140.000</strong></div>
-        <div><span>128 GB</span> &nbsp; <strong>$157.500</strong></div>
-        <div><span>256 GB</span> &nbsp; <strong>$192.500</strong></div>
+      <div class="detalle-precio" id="grado-a">
+        <div class="fila">64 GB — <strong>$140.000</strong></div>
+        <div class="fila">128 GB — <strong>$157.500</strong></div>
+        <div class="fila">256 GB — <strong>$192.500</strong></div>
       </div>
     </div>
 
     <!-- iPhone 12 -->
-    <div class="modelo">iPhone 12</div>
+    <h3 class="modelo">iPhone 12</h3>
+
     <div class="card">
       <div class="years">
-        <div class="elemento1">A</div>
-        <div class="elemento2">Grado</div>
+        <h4 class="elemento1">A</h4>
+        <h4 class="elemento2">Grado</h4>
       </div>
-      <div>
-        <div><span>64 GB</span> &nbsp; <strong>$200.000</strong></div>
-        <div><span>128 GB</span> &nbsp; <strong>$225.000</strong></div>
-        <div><span>256 GB</span> &nbsp; <strong>$300.000</strong></div>
+      <div class="detalle-precio" id="grado-a">
+        <div class="fila">64 GB — <strong>$200.000</strong></div>
+        <div class="fila">128 GB — <strong>$225.000</strong></div>
+        <div class="fila">256 GB — <strong>$300.000</strong></div>
       </div>
     </div>
 
     <div class="card">
       <div class="years">
-        <div class="elemento1">B</div>
-        <div class="elemento2">Grado</div>
+        <h4 class="elemento1">B</h4>
+        <h4 class="elemento2">Grado</h4>
       </div>
-      <div>
-        <div><span>64 GB</span> &nbsp; <strong>$140.000</strong></div>
-        <div><span>128 GB</span> &nbsp; <strong>$157.000</strong></div>
-        <div><span>256 GB</span> &nbsp; <strong>$210.000</strong></div>
+      <div class="detalle-precio" id="grado-a">
+        <div class="fila">64 GB — <strong>$140.000</strong></div>
+        <div class="fila">128 GB — <strong>$157.000</strong></div>
+        <div class="fila">256 GB — <strong>$210.000</strong></div>
       </div>
     </div>
 
     <!-- iPhone 12 Pro -->
-    <div class="modelo">iPhone 12 Pro</div>
+    <h3 class="modelo">iPhone 12 Pro</h3>
+
     <div class="card">
       <div class="years">
-        <div class="elemento1">A</div>
-        <div class="elemento2">Grado</div>
+        <h4 class="elemento1">A</h4>
+        <h4 class="elemento2">Grado</h4>
       </div>
-      <div>
-        <div><span>128 GB</span> &nbsp; <strong>$250.000</strong></div>
-        <div><span>256 GB</span> &nbsp; <strong>$300.000</strong></div>
-        <div><span>512 GB</span> &nbsp; <strong>$350.000</strong></div>
+      <div class="detalle-precio" id="grado-a">
+        <div class="fila">128 GB — <strong>$250.000</strong></div>
+        <div class="fila">256 GB — <strong>$300.000</strong></div>
+        <div class="fila">512 GB — <strong>$350.000</strong></div>
       </div>
     </div>
 
     <div class="card">
       <div class="years">
-        <div class="elemento1">B</div>
-        <div class="elemento2">Grado</div>
+        <h4 class="elemento1">B</h4>
+        <h4 class="elemento2">Grado</h4>
       </div>
-      <div>
-        <div><span>128 GB</span> &nbsp; <strong>$175.000</strong></div>
-        <div><span>256 GB</span> &nbsp; <strong>$210.000</strong></div>
-        <div><span>512 GB</span> &nbsp; <strong>$245.000</strong></div>
+      <div class="detalle-precio" id="grado-a">
+        <div class="fila">128 GB — <strong>$175.000</strong></div>
+        <div class="fila">256 GB — <strong>$210.000</strong></div>
+        <div class="fila">512 GB — <strong>$245.000</strong></div>
       </div>
     </div>
 
     <!-- iPhone 12 Pro Max -->
-    <div class="modelo">iPhone 12 Pro Max</div>
+    <h3 class="modelo">iPhone 12 Pro Max</h3>
+
     <div class="card">
       <div class="years">
-        <div class="elemento1">A</div>
-        <div class="elemento2">Grado</div>
+        <h4 class="elemento1">A</h4>
+        <h4 class="elemento2">Grado</h4>
       </div>
-      <div>
-        <div><span>128 GB</span> &nbsp; <strong>$350.000</strong></div>
-        <div><span>256 GB</span> &nbsp; <strong>$375.000</strong></div>
-        <div><span>512 GB</span> &nbsp; <strong>$400.000</strong></div>
+      <div class="detalle-precio" id="grado-a">
+        <div class="fila">128 GB — <strong>$350.000</strong></div>
+        <div class="fila">256 GB — <strong>$375.000</strong></div>
+        <div class="fila">512 GB — <strong>$400.000</strong></div>
       </div>
     </div>
 
     <div class="card">
       <div class="years">
-        <div class="elemento1">B</div>
-        <div class="elemento2">Grado</div>
+        <h4 class="elemento1">B</h4>
+        <h4 class="elemento2">Grado</h4>
       </div>
-      <div>
-        <div><span>128 GB</span> &nbsp; <strong>$210.000</strong></div>
-        <div><span>256 GB</span> &nbsp; <strong>$262.000</strong></div>
-        <div><span>512 GB</span> &nbsp; <strong>$280.000</strong></div>
+      <div class="detalle-precio" id="grado-a">
+        <div class="fila">128 GB — <strong>$210.000</strong></div>
+        <div class="fila">256 GB — <strong>$262.000</strong></div>
+        <div class="fila">512 GB — <strong>$280.000</strong></div>
       </div>
     </div>
 
-    <ul class="lista">
-      <li>Verificar condición física del dispositivo.</li>
-      <li>Verificar cámaras y micrófonos.</li>
-      <li>Verificar estado de batería (85% o más).</li>
-    </ul>
+    <div class="descripcion">
+      <ul>
+        <li>Verificar condición física del dispositivo.</li>
+        <li>Verificar cámaras y micrófonos.</li>
+        <li>Verificar estado de batería (85% o más).</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
