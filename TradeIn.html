@@ -40,14 +40,6 @@
       font-weight: 100;
     }
 
-    .titulo {
-      color: #FFFFFF;
-      font-size: 30px;
-      letter-spacing: 0.1em;
-      font-weight: 600;
-      margin: 10px 0 30px 0;
-    }
-
     .modelo {
       color: #FFFFFF;
       margin: 10px 0;
@@ -114,6 +106,7 @@
       margin-bottom: 50px;
     }
 
+    /* Estilo original de tu ejemplo */
     .contenedor {
       display: flex;
       padding: 20px;
@@ -125,63 +118,30 @@
       width: 100%;
     }
 
-    .card {
-      display: flex;
-      padding: 20px;
-      justify-content: center;
-      align-items: center;
-      background-color: #a4c47c;  
-      border-radius: 40px;
-      margin-bottom: 40px;
-      width: 100%;
-    }
-
     .years {
       padding: 20px;
       border: solid 4px white;
       border-radius: 20px;
       margin-right: 10px;
       margin-left: 20px;
-      flex: 0 0 auto;             
-      text-align: center;
     }
 
-    .detalle-precio {
+    /* Misma filosofía del contenedor, solo cambiando el color */
+    .card {
       display: flex;
-      flex-direction: column;
-      text-align: left;
-      width: 100%;
-      padding: 0 20px;
-      flex: 1 1 auto;              
-    }
-
-    .capacidad-precio {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      font-size: 38px;   
-      font-weight: 300;
-      margin: 10px 0;
-      width: 100%;
-      white-space: nowrap;         
-    }
-
-    .capacidad { font-weight: 300; }
-    .precio { font-weight: 600; }
-
-    .lista {
-      margin-top: 40px;
-      text-align: left;
-      font-size: 28px;
-      line-height: 1.6;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      background-color: #a4c47c; /* tu color */
+      border-radius: 40px;
+      margin-bottom: 40px;
       width: 100%;
     }
-
   </style>
 </head>
 <body>
   <div class="content">
-    <div class="titulo">PROGRAMA DE TRADEIN</div>
+    <div class="titulo">PROGRAMA DE TRADE-IN</div>
 
     <!-- iPhone 12 mini -->
     <div class="modelo">iPhone 12 mini</div>
@@ -190,21 +150,22 @@
         <div class="elemento1">A</div>
         <div class="elemento2">Grado</div>
       </div>
-      <div class="detalle-precio">
-        <div class="capacidad-precio"><span class="capacidad">64 GB</span><span class="precio">$200.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">128 GB</span><span class="precio">$225.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">256 GB</span><span class="precio">$275.000</span></div>
+      <div>
+        <div><span>64 GB</span> &nbsp; <strong>$200.000</strong></div>
+        <div><span>128 GB</span> &nbsp; <strong>$225.000</strong></div>
+        <div><span>256 GB</span> &nbsp; <strong>$275.000</strong></div>
       </div>
     </div>
+
     <div class="card">
       <div class="years">
         <div class="elemento1">B</div>
         <div class="elemento2">Grado</div>
       </div>
-      <div class="detalle-precio">
-        <div class="capacidad-precio"><span class="capacidad">64 GB</span><span class="precio">$140.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">128 GB</span><span class="precio">$157.500</span></div>
-        <div class="capacidad-precio"><span class="capacidad">256 GB</span><span class="precio">$192.500</span></div>
+      <div>
+        <div><span>64 GB</span> &nbsp; <strong>$140.000</strong></div>
+        <div><span>128 GB</span> &nbsp; <strong>$157.500</strong></div>
+        <div><span>256 GB</span> &nbsp; <strong>$192.500</strong></div>
       </div>
     </div>
 
@@ -215,21 +176,22 @@
         <div class="elemento1">A</div>
         <div class="elemento2">Grado</div>
       </div>
-      <div class="detalle-precio">
-        <div class="capacidad-precio"><span class="capacidad">64 GB</span><span class="precio">$200.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">128 GB</span><span class="precio">$225.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">256 GB</span><span class="precio">$300.000</span></div>
+      <div>
+        <div><span>64 GB</span> &nbsp; <strong>$200.000</strong></div>
+        <div><span>128 GB</span> &nbsp; <strong>$225.000</strong></div>
+        <div><span>256 GB</span> &nbsp; <strong>$300.000</strong></div>
       </div>
     </div>
+
     <div class="card">
       <div class="years">
         <div class="elemento1">B</div>
         <div class="elemento2">Grado</div>
       </div>
-      <div class="detalle-precio">
-        <div class="capacidad-precio"><span class="capacidad">64 GB</span><span class="precio">$140.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">128 GB</span><span class="precio">$157.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">256 GB</span><span class="precio">$210.000</span></div>
+      <div>
+        <div><span>64 GB</span> &nbsp; <strong>$140.000</strong></div>
+        <div><span>128 GB</span> &nbsp; <strong>$157.000</strong></div>
+        <div><span>256 GB</span> &nbsp; <strong>$210.000</strong></div>
       </div>
     </div>
 
@@ -240,21 +202,22 @@
         <div class="elemento1">A</div>
         <div class="elemento2">Grado</div>
       </div>
-      <div class="detalle-precio">
-        <div class="capacidad-precio"><span class="capacidad">128 GB</span><span class="precio">$250.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">256 GB</span><span class="precio">$300.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">512 GB</span><span class="precio">$350.000</span></div>
+      <div>
+        <div><span>128 GB</span> &nbsp; <strong>$250.000</strong></div>
+        <div><span>256 GB</span> &nbsp; <strong>$300.000</strong></div>
+        <div><span>512 GB</span> &nbsp; <strong>$350.000</strong></div>
       </div>
     </div>
+
     <div class="card">
       <div class="years">
         <div class="elemento1">B</div>
         <div class="elemento2">Grado</div>
       </div>
-      <div class="detalle-precio">
-        <div class="capacidad-precio"><span class="capacidad">128 GB</span><span class="precio">$175.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">256 GB</span><span class="precio">$210.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">512 GB</span><span class="precio">$245.000</span></div>
+      <div>
+        <div><span>128 GB</span> &nbsp; <strong>$175.000</strong></div>
+        <div><span>256 GB</span> &nbsp; <strong>$210.000</strong></div>
+        <div><span>512 GB</span> &nbsp; <strong>$245.000</strong></div>
       </div>
     </div>
 
@@ -265,21 +228,22 @@
         <div class="elemento1">A</div>
         <div class="elemento2">Grado</div>
       </div>
-      <div class="detalle-precio">
-        <div class="capacidad-precio"><span class="capacidad">128 GB</span><span class="precio">$350.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">256 GB</span><span class="precio">$375.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">512 GB</span><span class="precio">$400.000</span></div>
+      <div>
+        <div><span>128 GB</span> &nbsp; <strong>$350.000</strong></div>
+        <div><span>256 GB</span> &nbsp; <strong>$375.000</strong></div>
+        <div><span>512 GB</span> &nbsp; <strong>$400.000</strong></div>
       </div>
     </div>
+
     <div class="card">
       <div class="years">
         <div class="elemento1">B</div>
         <div class="elemento2">Grado</div>
       </div>
-      <div class="detalle-precio">
-        <div class="capacidad-precio"><span class="capacidad">128 GB</span><span class="precio">$210.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">256 GB</span><span class="precio">$262.000</span></div>
-        <div class="capacidad-precio"><span class="capacidad">512 GB</span><span class="precio">$280.000</span></div>
+      <div>
+        <div><span>128 GB</span> &nbsp; <strong>$210.000</strong></div>
+        <div><span>256 GB</span> &nbsp; <strong>$262.000</strong></div>
+        <div><span>512 GB</span> &nbsp; <strong>$280.000</strong></div>
       </div>
     </div>
 
