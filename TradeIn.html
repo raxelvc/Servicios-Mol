@@ -1,266 +1,173 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Programa de Trade-In</title>
+  <meta charset="UTF-8">
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      width: 100%;
-      background-color: #000000; 
+      background-color: #000;
       font-family: helvetica, sans-serif;
       color: white;
-      box-sizing: border-box;
-    }
-
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
     }
 
     .content {
       width: 90%;
-      max-width: 1000px;
-      padding: 20px;
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      max-width: 1200px;
+      margin: 40px auto;
       text-align: center;
     }
 
-    /* Encabezados del original */
     .titulo {
-      color: #FFFFFF;
-      margin: 10px 0;
-      font-size: 30px;
-      margin-bottom: 30px;
-      letter-spacing: 0.1em;
-      font-weight: 100;
+      font-size: 50px;
+      font-weight: 600;
+      margin-bottom: 50px;
     }
 
     .modelo {
-      color: #FFFFFF;
-      margin: 10px 0;
       font-size: 45px;
-      margin-bottom: 30px;
-      letter-spacing: 0.1em;
       font-weight: 600;
+      margin: 60px 0 30px 0;
+    }
+
+    .card {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      border-radius: 20px;
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #a4c47c; /* ✅ Fondo verde */
+    }
+
+    .years {
+      border: 4px solid white; /* ✅ Solo este mantiene borde blanco */
+      border-radius: 20px;
+      padding: 20px;
+      margin-right: 40px;
+      text-align: center;
+      min-width: 200px;
+      background-color: transparent;
+    }
+
+    .elemento1 {
+      font-size: 90px;
+      margin-bottom: 10px;
+    }
+
+    .elemento2 {
+      font-size: 30px;
+      border-top: 4px solid white;
+      padding-top: 15px;
+    }
+
+    .detalle-precio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .capacidad-precio {
+      display: flex;
+      justify-content: space-between;
+      font-size: 32px;
+      margin: 12px 0;
     }
 
     .capacidad {
-      margin: 16px 0 10px 0;
-      font-size: 38px;
-      font-weight: 500;
-      color: #FFFFFF;
+      font-weight: 400;
     }
 
-    /* Tarjeta tipo "contenedor" */
-    .card {
-      width: 100%;
-      background-color: #a4c47c;
-      border-radius: 40px;
-      padding: 20px;
-      margin-bottom: 40px;
-      display: flex;
-      align-items: center;
+    .precio {
+      font-weight: bold;
     }
 
-    /* Bloque izquierdo (Grado) */
-    .years {
-      padding: 20px;
-      text-align: center;
-      color: #FFFFFF;
-      border: solid 4px #FFFFFF;
-      border-radius: 20px;
-      margin-right: 10px; 
-      margin-left: 20px;
-    }
-
-    .elemento1 { /* Letra A/B enorme */
-      margin: 0;
-      font-size: 100px; /* mismo tamaño grande del original */
-      line-height: 0.9;
-      color: #FFFFFF;
-      font-weight: 700;
-    }
-
-    .elemento2 { /* texto "Grado" */
-      margin: 6px 0 0 0;
-      font-size: 35px; /* similar al "Años" original */
-      color: #FFFFFF;
-    }
-
-    /* Bloque derecho (precio enorme) usando el h2 de tu CSS original */
-    .precio-box {
-      flex: 1;
-      text-align: right;
-    }
-
-    .precio-box h2 { /* reusa el tamaño 132px del original para destacar precio */
-      margin: 0;
-      font-size: 132px;
-      color: #FFFFFF;
-      line-height: 0.9;
-      font-weight: 700;
-    }
-
-    /* Lista de requisitos */
     .lista {
+      margin-top: 60px;
+      font-size: 28px;
       text-align: left;
-      width: 100%;
-      max-width: 1000px;
-      font-size: 20px;
-      margin-top: 20px;
-      color: #FFFFFF;
     }
-    .lista li { margin: 6px 0; }
   </style>
 </head>
 <body>
   <div class="content">
     <div class="titulo">PROGRAMA DE TRADEIN</div>
 
-    <!-- ============ iPhone 12 mini ============ -->
+    <!-- iPhone 12 mini -->
     <div class="modelo">iPhone 12 mini</div>
-
-    <div class="capacidad">64 GB</div>
-    <div class="card">
-      <div class="years">
-        <div class="elemento1">A</div>
-        <div class="elemento2">Grado</div>
-      </div>
-      <div class="precio-box"><h2>$200.000</h2></div>
-    </div>
-    <div class="card">
-      <div class="years">
-        <div class="elemento1">B</div>
-        <div class="elemento2">Grado</div>
-      </div>
-      <div class="precio-box"><h2>$140.000</h2></div>
-    </div>
-
-    <div class="capacidad">128 GB</div>
     <div class="card">
       <div class="years"><div class="elemento1">A</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$225.000</h2></div>
+      <div class="detalle-precio">
+        <div class="capacidad-precio"><span class="capacidad">64 GB</span> <span class="precio">$200.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">128 GB</span> <span class="precio">$225.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">256 GB</span> <span class="precio">$275.000</span></div>
+      </div>
     </div>
     <div class="card">
       <div class="years"><div class="elemento1">B</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$157.500</h2></div>
+      <div class="detalle-precio">
+        <div class="capacidad-precio"><span class="capacidad">64 GB</span> <span class="precio">$140.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">128 GB</span> <span class="precio">$157.500</span></div>
+        <div class="capacidad-precio"><span class="capacidad">256 GB</span> <span class="precio">$192.500</span></div>
+      </div>
     </div>
 
-    <div class="capacidad">256 GB</div>
-    <div class="card">
-      <div class="years"><div class="elemento1">A</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$275.000</h2></div>
-    </div>
-    <div class="card">
-      <div class="years"><div class="elemento1">B</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$192.500</h2></div>
-    </div>
-
-    <!-- ============ iPhone 12 ============ -->
+    <!-- iPhone 12 -->
     <div class="modelo">iPhone 12</div>
-
-    <div class="capacidad">64 GB</div>
     <div class="card">
       <div class="years"><div class="elemento1">A</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$200.000</h2></div>
+      <div class="detalle-precio">
+        <div class="capacidad-precio"><span class="capacidad">64 GB</span> <span class="precio">$200.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">128 GB</span> <span class="precio">$225.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">256 GB</span> <span class="precio">$300.000</span></div>
+      </div>
     </div>
     <div class="card">
       <div class="years"><div class="elemento1">B</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$140.000</h2></div>
+      <div class="detalle-precio">
+        <div class="capacidad-precio"><span class="capacidad">64 GB</span> <span class="precio">$140.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">128 GB</span> <span class="precio">$157.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">256 GB</span> <span class="precio">$210.000</span></div>
+      </div>
     </div>
 
-    <div class="capacidad">128 GB</div>
-    <div class="card">
-      <div class="years"><div class="elemento1">A</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$225.000</h2></div>
-    </div>
-    <div class="card">
-      <div class="years"><div class="elemento1">B</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$157.000</h2></div>
-    </div>
-
-    <div class="capacidad">256 GB</div>
-    <div class="card">
-      <div class="years"><div class="elemento1">A</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$300.000</h2></div>
-    </div>
-    <div class="card">
-      <div class="years"><div class="elemento1">B</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$210.000</h2></div>
-    </div>
-
-    <!-- ============ iPhone 12 Pro ============ -->
+    <!-- iPhone 12 Pro -->
     <div class="modelo">iPhone 12 Pro</div>
-
-    <div class="capacidad">128 GB</div>
     <div class="card">
       <div class="years"><div class="elemento1">A</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$250.000</h2></div>
+      <div class="detalle-precio">
+        <div class="capacidad-precio"><span class="capacidad">128 GB</span> <span class="precio">$250.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">256 GB</span> <span class="precio">$300.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">512 GB</span> <span class="precio">$350.000</span></div>
+      </div>
     </div>
     <div class="card">
       <div class="years"><div class="elemento1">B</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$175.000</h2></div>
+      <div class="detalle-precio">
+        <div class="capacidad-precio"><span class="capacidad">128 GB</span> <span class="precio">$175.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">256 GB</span> <span class="precio">$210.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">512 GB</span> <span class="precio">$245.000</span></div>
+      </div>
     </div>
 
-    <div class="capacidad">256 GB</div>
-    <div class="card">
-      <div class="years"><div class="elemento1">A</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$300.000</h2></div>
-    </div>
-    <div class="card">
-      <div class="years"><div class="elemento1">B</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$210.000</h2></div>
-    </div>
-
-    <div class="capacidad">512 GB</div>
-    <div class="card">
-      <div class="years"><div class="elemento1">A</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$350.000</h2></div>
-    </div>
-    <div class="card">
-      <div class="years"><div class="elemento1">B</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$245.000</h2></div>
-    </div>
-
-    <!-- ============ iPhone 12 Pro Max ============ -->
+    <!-- iPhone 12 Pro Max -->
     <div class="modelo">iPhone 12 Pro Max</div>
-
-    <div class="capacidad">128 GB</div>
     <div class="card">
       <div class="years"><div class="elemento1">A</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$350.000</h2></div>
+      <div class="detalle-precio">
+        <div class="capacidad-precio"><span class="capacidad">128 GB</span> <span class="precio">$350.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">256 GB</span> <span class="precio">$375.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">512 GB</span> <span class="precio">$400.000</span></div>
+      </div>
     </div>
     <div class="card">
       <div class="years"><div class="elemento1">B</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$210.000</h2></div>
-    </div>
-
-    <div class="capacidad">256 GB</div>
-    <div class="card">
-      <div class="years"><div class="elemento1">A</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$375.000</h2></div>
-    </div>
-    <div class="card">
-      <div class="years"><div class="elemento1">B</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$262.000</h2></div>
-    </div>
-
-    <div class="capacidad">512 GB</div>
-    <div class="card">
-      <div class="years"><div class="elemento1">A</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$400.000</h2></div>
-    </div>
-    <div class="card">
-      <div class="years"><div class="elemento1">B</div><div class="elemento2">Grado</div></div>
-      <div class="precio-box"><h2>$280.000</h2></div>
+      <div class="detalle-precio">
+        <div class="capacidad-precio"><span class="capacidad">128 GB</span> <span class="precio">$210.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">256 GB</span> <span class="precio">$262.000</span></div>
+        <div class="capacidad-precio"><span class="capacidad">512 GB</span> <span class="precio">$280.000</span></div>
+      </div>
     </div>
 
     <ul class="lista">
