@@ -114,6 +114,7 @@
       margin-bottom: 50px;
     }
 
+    /* Estilo del ejemplo (contenedor) */
     .contenedor {
       display: flex;
       padding: 20px;
@@ -125,12 +126,13 @@
       width: 100%;
     }
 
+    /* Aplicado a las tarjetas exactamente igual al ejemplo, con tu color */
     .card {
       display: flex;
       padding: 20px;
       justify-content: center;
       align-items: center;
-      background-color: #a4c47c; 
+      background-color: #a4c47c; /* color solicitado */
       border-radius: 40px;
       margin-bottom: 40px;
       width: 100%;
@@ -144,6 +146,7 @@
       margin-left: 20px;
     }
 
+    /* Bloque de detalle a la derecha del “Grado” */
     .detalle-precio {
       display: flex;
       flex-direction: column;
@@ -156,7 +159,7 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      font-size: 38px;          
+      font-size: 38px;          /* coherente con .precio-detalle del ejemplo */
       font-weight: 300;
       margin: 10px 0;
       width: 100%;
@@ -165,6 +168,7 @@
     .capacidad { font-weight: 300; }
     .precio { font-weight: 600; }
 
+    /* Responsivo suave sin romper el estilo del ejemplo */
     @media (max-width: 480px) {
       .card {
         flex-direction: column;
@@ -190,7 +194,7 @@
 </head>
 <body>
   <div class="content">
-    <div class="titulo">PROGRAMA DE TRADEIN</div>
+    <div class="titulo">PROGRAMA DE TRADE-IN</div>
 
     <!-- iPhone 12 mini -->
     <div class="modelo">iPhone 12 mini</div>
