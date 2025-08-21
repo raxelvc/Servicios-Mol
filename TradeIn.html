@@ -6,15 +6,28 @@
     html, body {
       margin: 0;
       padding: 0;
-      background-color: #000;
+      height: 100%;
+      width: 100%;
+      background-color: #000000; 
       font-family: helvetica, sans-serif;
       color: white;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
 
     .content {
       width: 90%;
-      max-width: 1200px;
-      margin: 40px auto;
+      max-width: 1000px;
+      padding: 20px;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
     }
 
@@ -25,9 +38,12 @@
     }
 
     .modelo {
+      color: #FFFFFF;
+      margin: 10px 0;
       font-size: 45px;
+      margin-bottom: 30px;
+      letter-spacing: 0.1em;
       font-weight: 600;
-      margin: 60px 0 30px 0;
     }
 
     .card {
@@ -38,27 +54,30 @@
       margin: 20px 0;
       padding: 20px;
       background-color: #a4c47c; /* ✅ Fondo verde */
+      width: 100%;
     }
 
     .years {
-      border: 4px solid white; /* ✅ Solo este mantiene borde blanco */
-      border-radius: 20px;
       padding: 20px;
-      margin-right: 40px;
+      border: solid 4px white; /* ✅ Borde blanco solo aquí */
+      border-radius: 20px;
+      margin-right: 30px;
       text-align: center;
-      min-width: 200px;
       background-color: transparent;
+      min-width: 180px;
     }
 
     .elemento1 {
-      font-size: 90px;
-      margin-bottom: 10px;
+      margin: 5px 0;
+      font-size: 100px;
+      color: #FFFFFF;
     }
 
     .elemento2 {
-      font-size: 30px;
-      border-top: 4px solid white;
+      color: #FFFFFF;
+      border-top: solid 4px white;
       padding-top: 15px;
+      font-size: 28px;
     }
 
     .detalle-precio {
@@ -66,13 +85,15 @@
       flex-direction: column;
       justify-content: center;
       width: 100%;
+      text-align: left;
     }
 
     .capacidad-precio {
       display: flex;
       justify-content: space-between;
       font-size: 32px;
-      margin: 12px 0;
+      margin: 10px 0;
+      width: 100%;
     }
 
     .capacidad {
@@ -87,6 +108,7 @@
       margin-top: 60px;
       font-size: 28px;
       text-align: left;
+      width: 100%;
     }
   </style>
 </head>
