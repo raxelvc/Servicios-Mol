@@ -31,6 +31,13 @@
       text-align: center;
     }
 
+    /* Encabezado */
+    .header-image {
+      width: 100%;
+      max-width: 1000px;
+      margin-bottom: 40px;
+    }
+
     /* Títulos */
     h3 {
       color: #FFFFFF;
@@ -103,11 +110,6 @@
       text-align: left; 
     }
 
-    img {
-      width: 40%;
-      margin-bottom: 50px;
-    }
-
     /* Contenedores de grados */
     .contenedor {
       display: flex;
@@ -141,7 +143,7 @@
     }
 
     .detalle-precio {
-      text-align: center; 
+      text-align: center;
       padding: 0 20px;
       width: 100%;
     }
@@ -151,24 +153,28 @@
       font-weight: 300;
       margin: 25px 0;
       display: flex;
-      justify-content: space-around; 
+      justify-content: space-around;
       align-items: center;
       width: 100%;
     }
 
     .fila span {
-      font-size: clamp(2.5rem, 6vw, 5rem); 
+      font-size: clamp(2.5rem, 5vw, 4rem);
       font-weight: 600;
     }
 
     .fila strong { 
       font-weight: 600; 
-      font-size: clamp(2rem, 5vw, 4rem); 
+      font-size: clamp(2.7rem, 5.5vw, 4.2rem);
     }
+
   </style>
 </head>
 <body>
   <div class="content">
+    <!-- Encabezado con imagen base64 -->
+    <img class="header-image" src="data:image/png;base64,INSERTA_TU_BASE64_AQUI" alt="Encabezado">
+
     <h3>PROGRAMA DE TRADEIN</h3>
 
     <!-- iPhone 12 mini -->
