@@ -48,11 +48,13 @@
       font-weight: 100;
     }
 
+    /* Ajuste para textos modelo */
     .modelo {
-      font-size: 45px;
-      font-weight: 600;
+      font-size: 42px;         /* ligeramente más pequeño */
+      font-weight: 400;        /* líneas más delgadas */
+      letter-spacing: 0.05em;  /* menos espaciado */
+      font-stretch: normal;    /* se puede cambiar a 'condensed' si quieres más equino */
       margin: 10px 0 30px;
-      letter-spacing: 0.1em;
       color: white;
     }
 
@@ -74,7 +76,8 @@
       padding: 20px;
       border: solid 4px white;
       border-radius: 20px;
-      margin: 0 10px;
+      margin: 0 15px;
+      width: 140px;             /* ancho mayor */
       flex-shrink: 0;
       display: flex;
       flex-direction: column;
@@ -83,7 +86,7 @@
     }
 
     .years .elemento1 {
-      font-size: 100px;
+      font-size: 100px;  /* mantiene tamaño grande */
       color: white;
       margin: 5px 0;
       font-weight: 600;
