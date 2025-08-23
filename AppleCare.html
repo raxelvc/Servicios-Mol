@@ -50,11 +50,10 @@
 
     /* Ajuste para textos modelo */
     .modelo {
-      font-size: 42px;         /* ligeramente más pequeño */
-      font-weight: 400;        /* líneas más delgadas */
-      letter-spacing: 0.05em;  /* menos espaciado */
-      font-stretch: normal;    /* se puede cambiar a 'condensed' si quieres más equino */
-      margin: 10px 0 30px;
+      font-size: 34px;         /* más pequeño */
+      font-weight: 300;        /* más delgado */
+      letter-spacing: 0.03em;  /* menos espaciado */
+      margin: 10px 0 25px;
       color: white;
     }
 
@@ -63,7 +62,7 @@
       display: flex;
       width: 100%;
       min-height: 260px;
-      padding: 20px;
+      padding: 25px; /* más espacio para que no choquen bordes */
       justify-content: flex-start;
       align-items: stretch;
       background-color: #b30000; /* color rojo principal */
@@ -73,11 +72,11 @@
 
     /* Years */
     .years {
-      padding: 20px;
+      padding: 25px;
       border: solid 4px white;
       border-radius: 20px;
-      margin: 0 15px;
-      width: 140px;             /* ancho mayor */
+      margin: 0 20px;
+      width: 180px;             /* más ancho */
       flex-shrink: 0;
       display: flex;
       flex-direction: column;
@@ -86,14 +85,14 @@
     }
 
     .years .elemento1 {
-      font-size: 100px;  /* mantiene tamaño grande */
+      font-size: 95px;  
       color: white;
       margin: 5px 0;
       font-weight: 600;
     }
 
     .years .elemento2 {
-      font-size: 42px;
+      font-size: 38px;
       color: white;
       border-top: solid 4px white;
       padding-top: 15px;
@@ -108,35 +107,37 @@
       margin-left: 30px;
       flex-grow: 1;
       justify-content: center;
+      padding-right: 15px; /* margen extra a la derecha */
     }
 
     .fila-detalle {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     .modelo-text {
-      font-size: 30px;
+      font-size: 28px;
       font-weight: 300;
       color: white;
       text-align: left;
       flex-grow: 1;
+      padding-right: 10px;
     }
 
     .precio {
-      font-size: 50px;
+      font-size: 45px;
       font-weight: 600;
       color: white;
-      width: 200px;
+      width: 220px;
       text-align: right;
       flex-shrink: 0;
     }
 
     /* Descripción */
     .descripcion {
-      font-size: 38px;
+      font-size: 36px;
       color: #d4d4d3;
       font-weight: 300;
       margin-top: 30px;
