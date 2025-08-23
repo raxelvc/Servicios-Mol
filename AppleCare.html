@@ -1,16 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
+  <title>AppleCare+ Unificado</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      background-color: #000000; 
+      background-color: #000000;
       font-family: helvetica, sans-serif;
       color: white;
       box-sizing: border-box;
     }
+
     body {
       display: flex;
       justify-content: center;
@@ -18,6 +21,7 @@
       min-height: 100vh;
       width: 100%;
     }
+
     .content {
       width: 90%;
       max-width: 1000px;
@@ -28,33 +32,46 @@
       align-items: center;
       text-align: center;
     }
-    h3, .modelo {
-      color: #ffffff;
-      margin: 10px 0;
-      letter-spacing: 0.1em;
+
+    /* Encabezado */
+    .header-image {
+      width: 60%;
+      margin-bottom: 40px;
     }
+
+    /* Títulos */
     h3 {
+      color: white;
+      margin: 10px 0;
       font-size: 30px;
+      letter-spacing: 0.1em;
       font-weight: 100;
     }
+
     .modelo {
       font-size: 45px;
       font-weight: 600;
-      margin-bottom: 30px;
+      margin: 10px 0 30px;
+      letter-spacing: 0.1em;
+      color: white;
     }
+
+    /* Contenedores principales */
     .contenedor {
-      display:flex;
+      display: flex;
       width: 100%;
       min-height: 260px;
       padding: 20px;
       justify-content: flex-start;
       align-items: stretch;
-      background-color: #b30000; 
-      border-radius:40px;
+      background-color: #b30000; /* color rojo principal */
+      border-radius: 40px;
       margin-bottom: 40px;
     }
+
+    /* Years */
     .years {
-      padding:10px;
+      padding: 20px;
       border: solid 4px white;
       border-radius: 20px;
       margin: 0 10px;
@@ -64,18 +81,24 @@
       justify-content: center;
       align-items: center;
     }
+
     .years .elemento1 {
-      font-size: 80px;
+      font-size: 100px;
       color: white;
       margin: 5px 0;
+      font-weight: 600;
     }
+
     .years .elemento2 {
-      font-size: 40px;
+      font-size: 42px;
       color: white;
-      border-top:solid 4px white;
-      padding-top:15px;
+      border-top: solid 4px white;
+      padding-top: 15px;
       margin: 5px 0;
+      font-weight: 400;
     }
+
+    /* Detalles de precios */
     .detalle {
       display: flex;
       flex-direction: column;
@@ -83,19 +106,22 @@
       flex-grow: 1;
       justify-content: center;
     }
+
     .fila-detalle {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 10px;
     }
+
     .modelo-text {
-      font-size: 34px;
+      font-size: 38px;
       font-weight: 600;
       color: white;
       text-align: left;
       flex-grow: 1;
     }
+
     .precio {
       font-size: 50px;
       font-weight: 600;
@@ -104,14 +130,17 @@
       text-align: right;
       flex-shrink: 0;
     }
+
+    /* Descripción */
     .descripcion {
       font-size: 38px;
       color: #d4d4d3;
       font-weight: 300;
-      margin-top:30px;
+      margin-top: 30px;
       text-align: left;
       width: 100%;
     }
+
     .descripcion li {
       margin-bottom: 10px;
     }
@@ -119,6 +148,9 @@
 </head>
 <body>
   <div class="content">
+    <!-- Encabezado con imagen base64 -->
+    <img class="header-image" src="data:image/png;base64," alt="Encabezado">
+
     <h3>COBERTURA APPLECARE+</h3>
     <h3 class="modelo">AppleCare+</h3>
 
@@ -150,7 +182,6 @@
 
     <h3 class="modelo">AppleCare+ con Robo y Pérdida</h3>
 
-    <!-- iPhone Robo/Pérdida -->
     <div class="contenedor">
       <div class="years">
         <div class="elemento1">2</div>
@@ -176,7 +207,6 @@
       </div>
     </div>
 
-    <!-- Descripción -->
     <div class="descripcion">
       <ul>
         <li>Cobertura de 2 a 3 años según el dispositivo.</li>
